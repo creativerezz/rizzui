@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+dist
+build
+.env*.local
+.DS_Store
+*.log
+*.swp
+*.swo
+.vercel
+.turbo
+pnpm-lock.yaml

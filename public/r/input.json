@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input",
+  "type": "registry:ui",
+  "description": "Input component with variants (default, filled, ghost) and sizes (sm, md, lg)",
+  "dependencies": [
+    "class-variance-authority"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/input.tsx",
+      "content": "import * as React from \"react\"\nimport { cva, type VariantProps } from \"class-variance-authority\"\n\nimport { cn } from \"@/lib/utils\"\n\nconst inputVariants = cva(\n  \"flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50\",\n  {\n    variants: {\n      variant: {\n        default: \"\",\n        filled: \"bg-muted border-transparent\",\n        ghost: \"border-transparent hover:border-input focus-visible:border-input\",\n      },\n      inputSize: {\n        sm: \"h-8 text-xs px-2.5\",\n        md: \"h-9\",\n        lg: \"h-10 px-4 text-base\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n      inputSize: \"md\",\n    },\n  }\n)\n\nexport interface InputProps\n  extends React.InputHTMLAttributes<HTMLInputElement>,\n    VariantProps<typeof inputVariants> {}\n\nconst Input = React.forwardRef<HTMLInputElement, InputProps>(\n  ({ className, type, variant, inputSize, ...props }, ref) => {\n    return (\n      <input\n        type={type}\n        className={cn(inputVariants({ variant, inputSize, className }))}\n        ref={ref}\n        {...props}\n      />\n    )\n  }\n)\nInput.displayName = \"Input\"\n\nexport { Input, inputVariants }\n",
+      "type": "registry:ui"
+    }
+  ]
+}

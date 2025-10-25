@@ -1,0 +1,282 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "rizzui",
+  "homepage": "https://github.com/creativerezz/rizzui",
+  "items": [
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "description": "Button component with variants (default, outline, ghost, destructive) and sizes (sm, md, lg)",
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
+      "files": [
+        {
+          "path": "registry/default/ui/button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "description": "Card component with composition pattern (Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter)",
+      "dependencies": ["class-variance-authority"],
+      "files": [
+        {
+          "path": "registry/default/ui/card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "description": "Input component with variants (default, filled, ghost) and sizes (sm, md, lg)",
+      "dependencies": ["class-variance-authority"],
+      "files": [
+        {
+          "path": "registry/default/ui/input.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "description": "Textarea component for multi-line text input",
+      "files": [
+        {
+          "path": "registry/default/ui/textarea.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "description": "Label component for form fields",
+      "dependencies": ["@radix-ui/react-label"],
+      "files": [
+        {
+          "path": "registry/default/ui/label.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "description": "Select component with size variants (sm, md, lg)",
+      "dependencies": ["@radix-ui/react-select", "lucide-react"],
+      "files": [
+        {
+          "path": "registry/default/ui/select.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "description": "Dialog modal component with composition pattern",
+      "dependencies": ["@radix-ui/react-dialog", "lucide-react"],
+      "files": [
+        {
+          "path": "registry/default/ui/dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "description": "Dropdown menu component with composition pattern and multiple item types",
+      "dependencies": ["@radix-ui/react-dropdown-menu", "lucide-react"],
+      "files": [
+        {
+          "path": "registry/default/ui/dropdown-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "description": "Tabs component with composition pattern (Tabs, TabsList, TabsTrigger, TabsContent)",
+      "dependencies": ["@radix-ui/react-tabs"],
+      "files": [
+        {
+          "path": "registry/default/ui/tabs.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "description": "Accordion component for collapsible content sections",
+      "dependencies": ["@radix-ui/react-accordion", "lucide-react"],
+      "files": [
+        {
+          "path": "registry/default/ui/accordion.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "description": "Alert component with variants (default, destructive, success, warning, info)",
+      "dependencies": ["class-variance-authority"],
+      "files": [
+        {
+          "path": "registry/default/ui/alert.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "description": "Avatar component with size variants (sm, md, lg, xl) and fallback support",
+      "dependencies": ["@radix-ui/react-avatar", "class-variance-authority"],
+      "files": [
+        {
+          "path": "registry/default/ui/avatar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "description": "Badge component with variants (default, secondary, destructive, outline, success, warning, info) and sizes (sm, md, lg)",
+      "dependencies": ["class-variance-authority"],
+      "files": [
+        {
+          "path": "registry/default/ui/badge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "toast",
+      "type": "registry:ui",
+      "description": "Toast notification component with variants (default, destructive, success)",
+      "dependencies": ["@radix-ui/react-toast", "class-variance-authority", "lucide-react"],
+      "registryDependencies": ["use-toast"],
+      "files": [
+        {
+          "path": "registry/default/ui/toast.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "description": "Sheet component (slide-over panel) with side variants (top, bottom, left, right)",
+      "dependencies": ["@radix-ui/react-dialog", "class-variance-authority", "lucide-react"],
+      "files": [
+        {
+          "path": "registry/default/ui/sheet.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "description": "Table component with composition pattern for data display",
+      "files": [
+        {
+          "path": "registry/default/ui/table.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "description": "Checkbox component for boolean input",
+      "dependencies": ["@radix-ui/react-checkbox", "lucide-react"],
+      "files": [
+        {
+          "path": "registry/default/ui/checkbox.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "description": "Radio group component for single selection from multiple options",
+      "dependencies": ["@radix-ui/react-radio-group", "lucide-react"],
+      "files": [
+        {
+          "path": "registry/default/ui/radio-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "description": "Switch component for toggle input",
+      "dependencies": ["@radix-ui/react-switch"],
+      "files": [
+        {
+          "path": "registry/default/ui/switch.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "use-toast",
+      "type": "registry:hook",
+      "description": "Hook for managing toast notifications",
+      "files": [
+        {
+          "path": "hooks/use-toast.ts",
+          "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "button-demo",
+      "type": "registry:block",
+      "description": "Comprehensive button component demo showing all variants and sizes",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/default/blocks/button-demo/button-demo.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "form-demo",
+      "type": "registry:block",
+      "description": "Contact form example demonstrating form components",
+      "registryDependencies": ["button", "input", "label", "textarea", "select", "checkbox", "card"],
+      "files": [
+        {
+          "path": "registry/default/blocks/form-demo/form-demo.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "component-showcase",
+      "type": "registry:block",
+      "description": "Complete showcase of all RizzUI components",
+      "registryDependencies": ["button", "card", "badge", "avatar", "alert", "tabs", "accordion", "dialog", "sheet", "table", "switch"],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "registry/default/blocks/component-showcase/component-showcase.tsx",
+          "type": "registry:block"
+        }
+      ]
+    }
+  ]
+}
